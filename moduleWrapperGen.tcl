@@ -16,8 +16,7 @@ proc moduleWrapperGen {fileHandle} {
 			} else {
 				set commandLineWidth 1
 			}
-
-			##
+			# wrapper output
 			if {[regexp {,} $line] == 1} {
 				puts "\t.$sub2\(\),\t\/\/ $sub1 width $commandLineWidth"
 			} else {
